@@ -40,7 +40,7 @@ const Footer = () => {
         <div className={`styles.s0Part2`}>
           <h3 className={`${nunitoSans.className}text-[1.425rem] font-medium`}>Powered By:</h3>
 
-          <Link href="https://www.facebook.com/themisfitofnightraid">
+          <Link href="https://themisfitofnightraid.com">
             <strong className={`${playfairDisplay.className} text-[1rem]`}>TheMisFitOfNightRaid</strong>
           </Link>
         </div>
