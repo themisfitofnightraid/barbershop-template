@@ -31,7 +31,7 @@ export default function Home() {
           </>
         ) : (
           <div className='relative flex flex-col gap-7 md:gap-14 2xl:gap-20'>
-            <div className='absolute -top-[5rem] -left-[15rem] bg-[#ffbe4d] h-[40rem] w-[40rem] rounded-full blur-[100rem] opacity-10' />
+            <div className='dark:hidden absolute -top-[10rem] -left-[15rem] bg-[#ffbe4d] h-[40rem] w-[40rem] rounded-full blur-[100rem] opacity-15' />
             <Navbar />
             <main className='flex flex-col md:flex-row'>
               <section className="flex flex-col md:flex-row md:items-center">
