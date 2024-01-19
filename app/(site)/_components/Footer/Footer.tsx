@@ -1,7 +1,6 @@
-import { ArrowUp, Locate, Mail, Phone } from 'lucide-react'
+import { ArrowUp, Mail, MapPin, Phone } from 'lucide-react'
 import { Bitter, Nunito_Sans, Playfair_Display } from 'next/font/google'
 import Link from 'next/link'
-import React from 'react'
 const bitter = Bitter({
   subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext', 'vietnamese'],
   weight: ["100", "200", "400", "500", "600", "700", "800", "900"]
@@ -33,7 +32,7 @@ const Footer = () => {
             <p>themisfitofnightraid@proton.me</p>
           </div>
           <div className={`flex gap-[0.3rem] justify-center items-center `}>
-            <Locate className={`styles.s0P1DIco`} />
+            <MapPin className={`styles.s0P1DIco`} />
             <p>+ Srijana Chowk | Pokhara</p>
           </div>
         </div>
