@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Bitter } from 'next/font/google'
+import Link from 'next/link'
 
 const bitter = Bitter({
     subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext', 'vietnamese'],
@@ -26,11 +27,13 @@ const HeroBtn = () => {
                 >
                 </span>
             </Button>
-            <div className='h-[3rem] w-[3rem] flex items-center justify-center heroArrow rounded-full bg-accent'>
-                <svg width="2rem" height="2rem" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#e6e6e6" d="M17 8a1 1 0 0 0-1 1v5.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29H9a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1"></path>
-                </svg>
-            </div>
+            <Link href="#services">
+                <div className='h-[3rem] w-[3rem] flex items-center justify-center heroArrow dark:shadow-sm rounded-full bg-accent'>
+                    <svg width="2rem" height="2rem" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#e6e6e6" d="M17 8a1 1 0 0 0-1 1v5.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29H9a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1"></path>
+                    </svg>
+                </div>
+            </Link>
         </div>
     )
 }

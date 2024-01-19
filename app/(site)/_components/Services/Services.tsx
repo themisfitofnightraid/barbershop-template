@@ -3,7 +3,7 @@ import ServiceCard from './ServiceCard'
 
 const Services = () => {
     return (
-        <section className='flex flex-col gap-7'>
+        <section id="services" className='flex flex-col gap-7'>
             <article className='flex flex-col items-center'>
                 <h2 className={`text-[3.546rem] 2xl:text-[4.25rem]`}>Our Services</h2>
                 <p className='w-[70%] text-center'>We are here to help you provide the best possible experience.Our team of exprets are here to help you in every step of your way, from choosing the right haircuit to the end.</p>

@@ -43,7 +43,7 @@ const CoinTwo = () => {
         >
             <motion.div
                 layoutId='coin-two'
-                className='hover:cursor-pointer h-[4rem] w-[4rem] 2xl:hidden rounded-full bg-primary heroCircles flex items-center justify-center'
+                className='hover:cursor-pointer h-[4rem] w-[4rem] 2xl:hidden rounded-full bg-primary heroCircles dark:shadow-sm flex items-center justify-center'
                 transition={{
                     duration: 0.8,
                     ease: [0, 0.71, 0.2, 1.01],
@@ -79,7 +79,7 @@ const CoinTwo = () => {
             </motion.div>
             <p className='2xl:text-[1.71rem]'>Rs. 150</p>
             <motion.video
-                src="/assets/hero/videos/video1.mp4"
+                src="/assets/hero/videos/video1.webm"
                 autoPlay
                 muted
                 loop
