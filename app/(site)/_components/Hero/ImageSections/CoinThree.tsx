@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import React, { useRef } from 'react';
 
 const CoinThree = () => {
     const ref = useRef<HTMLDivElement | null>(null);

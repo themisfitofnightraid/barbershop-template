@@ -1,10 +1,10 @@
 "use client"
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-import { AnimatePresence, motion, Variants } from "framer-motion"
 import ToggleTheme from '@/components/ToggleTheme'
 import { Button } from '@/components/ui/button'
+import { AnimatePresence, motion, Variants } from "framer-motion"
 
 import { AlignRight, X } from 'lucide-react'
 

@@ -1,5 +1,4 @@
 import { TimeStampData } from '@/constants/timeStampsData'
-import React from 'react'
 import TimeStamp from './TimeStamp'
 
 const Hours = () => {

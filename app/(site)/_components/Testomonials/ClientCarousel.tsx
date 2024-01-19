@@ -1,9 +1,9 @@
-import React from 'react'
-import Autoplay from "embla-carousel-autoplay"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { ClientFeedback } from '@/constants/clientFeedbacks'
-import Image from 'next/image'
+import Autoplay from "embla-carousel-autoplay"
 import { Bitter } from 'next/font/google'
+import Image from 'next/image'
+import React from 'react'
 
 const bitter = Bitter({
   subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext', 'vietnamese'],

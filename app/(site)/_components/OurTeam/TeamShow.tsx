@@ -1,6 +1,5 @@
 import { TeamMemberData } from '@/constants/teamMembers'
 import Image from 'next/image'
-import React from 'react'
 
 const TeamShow = () => {
     return (

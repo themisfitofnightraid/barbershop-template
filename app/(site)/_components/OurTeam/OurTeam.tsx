@@ -1,4 +1,3 @@
-import React from 'react'
 import TeamShow from './TeamShow'
 
 const OurTeam = () => {
