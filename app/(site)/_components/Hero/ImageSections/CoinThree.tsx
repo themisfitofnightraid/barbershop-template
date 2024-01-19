@@ -11,8 +11,6 @@ const CoinThree = () => {
     const xSpring = useSpring(x);
     const ySpring = useSpring(y);
 
-    // const top = useTransform(ySpring, [0.5, -0.5], ["60%", "40%"]);
-    // const left = useTransform(xSpring, [0.5, -0.5], ["-50%", "10%"]);
     const top = useTransform(ySpring, [0.5, -0.5], ["60%", "40%"]);
     const left = useTransform(xSpring, [0.5, -0.5], ["-290%", "-150%"]);
 
@@ -46,7 +44,7 @@ const CoinThree = () => {
         >
             <motion.div
                 layoutId='coin-three'
-                className='hover:cursor-pointer h-[4rem] w-[4rem] 2xl:hidden rounded-full bg-primary heroOfferCard flex items-center justify-center'
+                className='hover:cursor-pointer h-[4rem] w-[4rem] 2xl:h-[7rem] 2xl:w-[7rem] rounded-full bg-primary heroOfferCard flex items-center justify-center'
                 transition={{
                     duration: 0.8,
                     ease: [0, 0.71, 0.2, 1.01],
@@ -58,25 +56,7 @@ const CoinThree = () => {
                     },
                 }}
             >
-                <svg width="1.8rem" height="3.8rem" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#000000" d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226L11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0"></path>
-                </svg>
-            </motion.div>
-            <motion.div
-                layoutId='coin-three-xl'
-                className='hidden h-[4rem] w-[4rem] xl:h-[7rem] xl:w-[7rem] rounded-full bg-primary heroCircles 2xl:flex items-center justify-center'
-                transition={{
-                    duration: 0.8,
-                    ease: [0, 0.71, 0.2, 1.01],
-                    scale: {
-                        type: "spring",
-                        damping: 5,
-                        stiffness: 100,
-                        restDelta: 0.001,
-                    },
-                }}
-            >
-                <svg width="3.3rem" height="3.8rem" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <svg className='2xl:w-[3rem] 2xl:h-[3rem]' width="1.8rem" height="3.8rem" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#000000" d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226L11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0"></path>
                 </svg>
             </motion.div>

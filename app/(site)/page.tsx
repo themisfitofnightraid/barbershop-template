@@ -3,11 +3,16 @@
 import { Bitter } from 'next/font/google'
 import { useState } from 'react'
 import Loader from './loader'
+import FinalCTA from './_components/FinalCTA/FinalCTA'
+import Footer from './_components/Footer/Footer'
 import HeroBtn from './_components/Hero/HeroBtn'
 import HeroImage from './_components/Hero/HeroImage'
 import ThreeCoins from './_components/Hero/ThreeCoins'
 import Navbar from './_components/Navbar/Navbar'
+import OurTeam from './_components/OurTeam/OurTeam'
 import Services from './_components/Services/Services'
+import SmallGallery from './_components/SmallGallery/SmallGallery'
+import Testomonials from './_components/Testomonials/Testomonials'
 import WorkingHours from './_components/WorkingHours/WorkingHours'
 
 const bitter = Bitter({
@@ -25,11 +30,11 @@ export default function Home() {
             <Loader setIsLoading={setIsLoading} />
           </>
         ) : (
-          <div className='relative'>
+          <div className='relative flex flex-col gap-7 md:gap-14 2xl:gap-20'>
             <div className='absolute -top-[5rem] -left-[15rem] bg-[#ffbe4d] h-[40rem] w-[40rem] rounded-full blur-[100rem] opacity-10' />
             <Navbar />
-            <main className=''>
-              <section className="flex items-center">
+            <main className='flex flex-col md:flex-row'>
+              <section className="flex flex-col md:flex-row md:items-center">
                 <div className='flex flex-col w-full h-full justify-center gap-12'>
                   <div className='flex flex-col gap-6'>
                     <div>
@@ -51,6 +56,11 @@ export default function Home() {
             </main>
             <Services />
             <WorkingHours />
+            <Testomonials />
+            <SmallGallery />
+            <OurTeam />
+            <FinalCTA />
+            <Footer />
           </div>
         )
       }

@@ -4,7 +4,7 @@ import CoinTwo from "./ImageSections/CoinTwo"
 
 const ThreeCoins = () => {
     return (
-        <div className='h-full w-fit px-2 flex md:flex-col md:justify-between lg:gap-14'>
+        <div className='hidden h-full w-fit px-2 md:flex md:flex-col md:justify-between lg:gap-14'>
             <CoinOne />
             <CoinTwo />
             <CoinThree />
